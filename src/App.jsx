@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import ReportList from './components/ReportList';
 import ReportEditor from './components/ReportEditor';
 import ReportForm from './components/ReportForm';
+import InstallPrompt from './components/InstallPrompt';
 import { loadReports, saveReports, deleteReport } from './utils/storage';
 import './App.css';
 
@@ -52,6 +53,7 @@ export default function App() {
 
   return (
     <div className="app">
+      <InstallPrompt />
       {view === 'list' && (
         <ReportList
           reports={reports}
