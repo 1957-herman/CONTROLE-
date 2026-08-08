@@ -87,10 +87,10 @@ export const PROJECT_CATEGORIES = [
 ];
 
 export const CONTACT = {
-  phone: '+244 900 000 000',
-  whatsapp: '244900000000',
-  whatsappDisplay: '+244 900 000 000',
+  phone: '+244 922 915 151',
+  whatsapp: '244922915151',
+  whatsappDisplay: '+244 922 915 151',
   email: 'geral@triarea.co.ao',
-  location: '[Cidade, País]',
+  location: 'Luanda, Angola',
   hours: 'Segunda a Sábado, 08h00 – 17h00',
 };
