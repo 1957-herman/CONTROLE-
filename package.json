@@ -1,5 +1,5 @@
 {
-  "name": "controle-",
+  "name": "triarea-website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,11 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "html2canvas": "^1.4.1",
-    "jspdf": "^4.2.1",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7",
-    "uuid": "^14.0.1"
+    "react-dom": "^19.2.7"
   },
   "devDependencies": {
     "@types/react": "^19.2.17",

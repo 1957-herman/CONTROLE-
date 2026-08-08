@@ -1,84 +1,30 @@
-import { useState, useEffect } from 'react';
-import ReportList from './components/ReportList';
-import ReportEditor from './components/ReportEditor';
-import ReportForm from './components/ReportForm';
-import InstallPrompt from './components/InstallPrompt';
-import { loadReports, saveReports, deleteReport } from './utils/storage';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Sobre from './components/Sobre';
+import Servicos from './components/Servicos';
+import Diferenciais from './components/Diferenciais';
+import Processo from './components/Processo';
+import Projetos from './components/Projetos';
+import CtaBanner from './components/CtaBanner';
+import Contacto from './components/Contacto';
+import Footer from './components/Footer';
 import './App.css';
 
 export default function App() {
-  const [reports, setReports] = useState([]);
-  const [view, setView] = useState('list'); // 'list' | 'create' | 'edit'
-  const [activeId, setActiveId] = useState(null);
-
-  useEffect(() => {
-    setReports(loadReports());
-  }, []);
-
-  function handleCreate(formData) {
-    const newReport = {
-      id: crypto.randomUUID(),
-      ...formData,
-      photos: [],
-      createdAt: new Date().toISOString(),
-    };
-    const updated = [newReport, ...reports];
-    setReports(updated);
-    saveReports(updated);
-    setActiveId(newReport.id);
-    setView('edit');
-  }
-
-  function handleSave(updatedReport) {
-    const updated = reports.map(r => r.id === updatedReport.id ? updatedReport : r);
-    setReports(updated);
-    saveReports(updated);
-  }
-
-  function handleDelete(id) {
-    const updated = deleteReport(id);
-    setReports(updated);
-    if (activeId === id) {
-      setActiveId(null);
-      setView('list');
-    }
-  }
-
-  function handleOpen(id) {
-    setActiveId(id);
-    setView('edit');
-  }
-
-  const activeReport = reports.find(r => r.id === activeId);
-
   return (
     <div className="app">
-      <InstallPrompt />
-      {view === 'list' && (
-        <ReportList
-          reports={reports}
-          onOpen={handleOpen}
-          onCreate={() => setView('create')}
-          onDelete={handleDelete}
-        />
-      )}
-
-      {view === 'create' && (
-        <div className="centered-form">
-          <ReportForm
-            onSave={handleCreate}
-            onCancel={() => setView('list')}
-          />
-        </div>
-      )}
-
-      {view === 'edit' && activeReport && (
-        <ReportEditor
-          report={activeReport}
-          onSave={handleSave}
-          onBack={() => setView('list')}
-        />
-      )}
+      <Header />
+      <main>
+        <Hero />
+        <Sobre />
+        <Servicos />
+        <Diferenciais />
+        <Processo />
+        <Projetos />
+        <CtaBanner />
+        <Contacto />
+      </main>
+      <Footer />
     </div>
   );
 }

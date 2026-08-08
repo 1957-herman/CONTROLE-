@@ -1,21 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <!-- Background -->
-  <rect width="512" height="512" rx="96" fill="#1e4078"/>
-  <!-- Camera body -->
-  <rect x="96" y="176" width="320" height="228" rx="28" fill="#ffffff"/>
-  <!-- Camera viewfinder bump -->
-  <rect x="176" y="140" width="120" height="52" rx="18" fill="#ffffff"/>
-  <!-- Lens outer ring -->
-  <circle cx="256" cy="292" r="80" fill="#1e4078"/>
-  <!-- Lens inner -->
-  <circle cx="256" cy="292" r="58" fill="#2a5298"/>
-  <!-- Lens shine -->
-  <circle cx="256" cy="292" r="38" fill="#3d6bc4"/>
-  <!-- Lens center -->
-  <circle cx="256" cy="292" r="20" fill="#1e4078"/>
-  <!-- Flash indicator -->
-  <circle cx="368" cy="212" r="16" fill="#f0a500"/>
-  <!-- Document lines (report symbol) -->
-  <rect x="120" y="440" width="272" height="10" rx="5" fill="rgba(255,255,255,0.3)"/>
-  <rect x="120" y="460" width="200" height="10" rx="5" fill="rgba(255,255,255,0.2)"/>
+  <rect width="512" height="512" rx="96" fill="#0b1f3a"/>
+  <rect x="128" y="316" width="72" height="120" rx="14" fill="#8fe4b8"/>
+  <rect x="220" y="256" width="72" height="180" rx="14" fill="#34d68a"/>
+  <rect x="312" y="176" width="72" height="260" rx="14" fill="#17a866"/>
+  <circle cx="348" cy="120" r="30" fill="#34d68a"/>
 </svg>
