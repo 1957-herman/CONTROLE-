@@ -2,7 +2,7 @@ name: Deploy para GitHub Pages
 
 on:
   push:
-    branches: [claude/photo-report-pdf-app-j84eu4, main]
+    branches: [claude/triarea-website-2mjx09, main]
   workflow_dispatch:
 
 permissions:
