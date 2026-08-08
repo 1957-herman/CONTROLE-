@@ -90,7 +90,7 @@ export const CONTACT = {
   phone: '+244 922 915 151',
   whatsapp: '244922915151',
   whatsappDisplay: '+244 922 915 151',
-  email: 'geral@triarea.co.ao',
+  email: 'geral@triarea.ao',
   location: 'Luanda, Angola',
   hours: 'Segunda a Sábado, 08h00 – 17h00',
 };
