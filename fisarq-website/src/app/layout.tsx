@@ -52,7 +52,7 @@ const jsonLd = {
   description: siteConfig.description,
   address: {
     "@type": "PostalAddress",
-    streetAddress: siteConfig.contact.address.street,
+    streetAddress: `${siteConfig.contact.address.street}, ${siteConfig.contact.address.district}`,
     addressLocality: siteConfig.contact.address.city,
     addressCountry: siteConfig.contact.address.countryCode,
   },

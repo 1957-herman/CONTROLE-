@@ -19,10 +19,11 @@ export const siteConfig = {
   ],
   contact: {
     email: "geral@fisarq.ao",
-    phone: "+244 900 000 000",
-    phoneHref: "tel:+244900000000",
+    phone: "+244 922 915 151",
+    phoneHref: "tel:+244922915151",
     address: {
-      street: "Rua Rainha Ginga, 000",
+      street: "Rua João de Barros, n.º 17",
+      district: "Ingombota",
       city: "Luanda",
       country: "Angola",
       countryCode: "AO",
