@@ -1,4 +1,4 @@
-import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { Briefcase, Clock, Mail, MapPin, Phone } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ContactForm } from "./ContactForm";
 import { siteConfig } from "@/lib/site";
@@ -8,7 +8,8 @@ export function Contact() {
   const items = [
     { icon: MapPin, label: "Morada", value: `${contact.address.street}, ${contact.address.district}, ${contact.address.city}, ${contact.address.country}` },
     { icon: Phone, label: "Telefone", value: contact.phone, href: contact.phoneHref },
-    { icon: Mail, label: "E-mail", value: contact.email, href: `mailto:${contact.email}` },
+    { icon: Mail, label: "E-mail geral", value: contact.email, href: `mailto:${contact.email}` },
+    { icon: Briefcase, label: "Comercial", value: contact.salesEmail, href: `mailto:${contact.salesEmail}` },
     { icon: Clock, label: "Horário", value: contact.hours },
   ];
 

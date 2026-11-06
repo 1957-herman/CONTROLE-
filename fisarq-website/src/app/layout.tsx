@@ -56,6 +56,10 @@ const jsonLd = {
     addressLocality: siteConfig.contact.address.city,
     addressCountry: siteConfig.contact.address.countryCode,
   },
+  contactPoint: [
+    { "@type": "ContactPoint", contactType: "customer service", email: siteConfig.contact.email, telephone: siteConfig.contact.phone, availableLanguage: "Portuguese" },
+    { "@type": "ContactPoint", contactType: "sales", email: siteConfig.contact.salesEmail, telephone: siteConfig.contact.phone, availableLanguage: "Portuguese" },
+  ],
   sameAs: Object.values(siteConfig.social),
   areaServed: "AO",
   knowsAbout: siteConfig.keywords,

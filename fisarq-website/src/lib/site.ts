@@ -19,6 +19,7 @@ export const siteConfig = {
   ],
   contact: {
     email: "geral@fisarq.ao",
+    salesEmail: "comercial@fisarq.ao",
     phone: "+244 922 915 151",
     phoneHref: "tel:+244922915151",
     address: {

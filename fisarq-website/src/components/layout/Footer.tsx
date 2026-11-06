@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Briefcase, Mail, MapPin, Phone } from "lucide-react";
 import { Logo } from "@/components/ui/Logo";
 import { navLinks, siteConfig } from "@/lib/site";
 import { services } from "@/lib/data/services";
@@ -49,6 +49,10 @@ export function Footer() {
             <li className="flex gap-3">
               <Mail className="mt-0.5 h-4 w-4 shrink-0 text-bronze-400" aria-hidden="true" />
               <a href={`mailto:${contact.email}`} className="hover:text-bronze-300">{contact.email}</a>
+            </li>
+            <li className="flex gap-3">
+              <Briefcase className="mt-0.5 h-4 w-4 shrink-0 text-bronze-400" aria-hidden="true" />
+              <a href={`mailto:${contact.salesEmail}`} className="hover:text-bronze-300">{contact.salesEmail}</a>
             </li>
           </ul>
         </address>
