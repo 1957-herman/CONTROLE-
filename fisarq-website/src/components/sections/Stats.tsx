@@ -33,7 +33,7 @@ export function Stats() {
     <section aria-labelledby="stats-title" className="border-b border-stone-200 bg-stone-100 py-20 sm:py-24">
       <div className="container-site">
         <h2 id="stats-title" className="sr-only">A FISARQ em números</h2>
-        <dl className="grid grid-cols-2 gap-y-12 lg:grid-cols-4">
+        <dl className="grid gap-y-10 sm:grid-cols-3">
           {stats.map((s) => (
             <div key={s.label} className="flex flex-col-reverse border-l border-stone-300 pl-6">
               <dt className="mt-2 text-sm text-stone-600">{s.label}</dt>
