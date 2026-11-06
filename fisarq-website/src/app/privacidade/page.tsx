@@ -3,7 +3,7 @@ import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Política de Privacidade",
-  description: "Como a FISARQ recolhe, utiliza e protege os seus dados pessoais, em conformidade com o RGPD.",
+  description: "Como a FISARQ recolhe, utiliza e protege os seus dados pessoais, em conformidade com a Lei n.º 22/11 de Protecção de Dados Pessoais.",
   alternates: { canonical: "/privacidade" },
 };
 
@@ -14,8 +14,8 @@ export default function PrivacyPage() {
       <h1 className="mt-4 text-4xl font-semibold sm:text-5xl">Política de Privacidade</h1>
       <div className="mt-10 space-y-6 leading-relaxed text-anthracite-700 [&_h2]:mt-10 [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-anthracite-900">
         <p>
-          A {siteConfig.legalName} é responsável pelo tratamento dos dados pessoais recolhidos através deste website, nos termos do
-          Regulamento (UE) 2016/679 (RGPD).
+          A {siteConfig.legalName} é responsável pelo tratamento dos dados pessoais recolhidos através deste website, nos termos da
+          Lei n.º 22/11, de 17 de Junho (Lei da Protecção de Dados Pessoais da República de Angola).
         </p>
         <h2>Dados recolhidos</h2>
         <p>Nome, e-mail, telefone e conteúdo da mensagem submetidos voluntariamente no formulário de contacto.</p>

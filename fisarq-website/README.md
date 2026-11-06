@@ -25,7 +25,7 @@ fisarq-website/
 │   │   ├── page.tsx           # composição das secções da homepage
 │   │   ├── globals.css        # design system (@theme: antracite, stone, bronze)
 │   │   ├── api/contact/route.ts  # endpoint do formulário (validação, rate limit, honeypot, Resend)
-│   │   ├── privacidade/page.tsx  # política de privacidade (RGPD)
+│   │   ├── privacidade/page.tsx  # política de privacidade (Lei n.º 22/11 — Angola)
 │   │   ├── sitemap.ts · robots.ts · manifest.ts · opengraph-image.tsx · icon.svg · not-found.tsx
 │   ├── components/
 │   │   ├── layout/            # Navbar (sticky, menu móvel, secção ativa) · Footer
@@ -52,7 +52,7 @@ definidos, envia e-mail via Resend; caso contrário regista o pedido no log do s
 
 - Metadata API (title template, canonical, Open Graph, Twitter), `sitemap.xml`, `robots.txt`, manifest, imagem OG gerada.
 - Dados estruturados `ProfessionalService` (schema.org).
-- HTML semântico (`header/nav/main/section/article/address/footer`), `lang="pt-PT"`, hierarquia de headings.
+- HTML semântico (`header/nav/main/section/article/address/footer`), `lang="pt-AO"`, hierarquia de headings.
 - Skip link, `focus-visible`, `aria-current`, `aria-expanded`, `aria-pressed`, `aria-live`, erros ligados por `aria-describedby`.
 - Respeita `prefers-reduced-motion`.
 

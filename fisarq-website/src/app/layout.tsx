@@ -53,18 +53,17 @@ const jsonLd = {
   address: {
     "@type": "PostalAddress",
     streetAddress: siteConfig.contact.address.street,
-    postalCode: siteConfig.contact.address.postalCode,
     addressLocality: siteConfig.contact.address.city,
     addressCountry: siteConfig.contact.address.countryCode,
   },
   sameAs: Object.values(siteConfig.social),
-  areaServed: "PT",
+  areaServed: "AO",
   knowsAbout: siteConfig.keywords,
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt-PT" className={`${inter.variable} ${jakarta.variable}`}>
+    <html lang="pt-AO" className={`${inter.variable} ${jakarta.variable}`}>
       <body>
         <a
           href="#conteudo"

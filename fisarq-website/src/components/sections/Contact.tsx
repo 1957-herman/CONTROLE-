@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/site";
 export function Contact() {
   const { contact } = siteConfig;
   const items = [
-    { icon: MapPin, label: "Morada", value: `${contact.address.street}, ${contact.address.postalCode} ${contact.address.city}` },
+    { icon: MapPin, label: "Morada", value: `${contact.address.street}, ${contact.address.city}, ${contact.address.country}` },
     { icon: Phone, label: "Telefone", value: contact.phone, href: contact.phoneHref },
     { icon: Mail, label: "E-mail", value: contact.email, href: `mailto:${contact.email}` },
     { icon: Clock, label: "Horário", value: contact.hours },
