@@ -47,9 +47,9 @@ export function Stats() {
 
         <div className="mt-20">
           <p className="text-center text-xs font-semibold uppercase tracking-[0.25em] text-stone-500">Parceiros e clientes que confiam em nós</p>
-          <ul className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-6">
+          <ul className="mt-8 flex flex-wrap justify-center gap-4">
             {partners.map((p) => (
-              <li key={p} className="flex h-14 items-center justify-center rounded-lg border border-stone-200 bg-stone-50 px-3 text-center font-display text-sm font-semibold tracking-wide text-stone-500">
+              <li key={p} className="flex min-h-14 w-full items-center justify-center rounded-lg border border-stone-200 bg-stone-50 px-5 py-3 text-center font-display text-sm font-semibold tracking-wide text-stone-600 sm:w-auto">
                 {p}
               </li>
             ))}

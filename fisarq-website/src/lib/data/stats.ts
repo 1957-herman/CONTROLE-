@@ -9,4 +9,10 @@ export const stats: Stat[] = [
   { value: 40, suffix: "+", label: "Parcerias ativas" },
 ];
 
-export const partners = ["Atlas Engenharia", "Norte Capital", "Grupo Meridian", "Lusoterra", "Vértice Imobiliária", "Tagus Tech"];
+export const partners = [
+  "Administração Municipal do Cuvango",
+  "Administração Municipal da Humpata",
+  "Fundo Rodoviário",
+  "Ministério da Justiça e dos Direitos Humanos",
+  "Ministério do Comércio",
+];
