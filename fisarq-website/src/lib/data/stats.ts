@@ -5,7 +5,7 @@ export type Stat = { value: number; suffix: string; label: string };
 export const stats: Stat[] = [
   // Calculado a partir do ano de fundação — atualiza-se sozinho todos os anos
   { value: new Date().getFullYear() - siteConfig.foundingYear, suffix: "", label: `Anos de experiência (desde ${siteConfig.foundingYear})` },
-  { value: 350, suffix: "+", label: "Projetos concluídos" },
+  { value: 57, suffix: "", label: "Projetos concluídos" },
   { value: 98, suffix: "%", label: "Clientes satisfeitos" },
   { value: 40, suffix: "+", label: "Parcerias ativas" },
 ];
