@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* Design system FISARQ — neutros, antracite e bronze subtil */
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-jakarta), var(--font-inter), ui-sans-serif, sans-serif;
+
+  --color-anthracite-950: #111315;
+  --color-anthracite-900: #1a1d20;
+  --color-anthracite-800: #24282c;
+  --color-anthracite-700: #33383e;
+  --color-anthracite-600: #4a5058;
+
+  --color-stone-50: #faf9f7;
+  --color-stone-100: #f3f1ed;
+  --color-stone-200: #e7e3dc;
+  --color-stone-300: #d3cdc3;
+  --color-stone-500: #8c867c;
+  --color-stone-600: #6b665e;
+
+  --color-bronze-300: #d6bf98;
+  --color-bronze-400: #c2a273;
+  --color-bronze-500: #a8865b;
+  --color-bronze-600: #8a6c45;
+
+  --ease-elegant: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+  body {
+    @apply bg-stone-50 font-sans text-anthracite-900 antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight text-balance;
+  }
+  ::selection {
+    @apply bg-bronze-300 text-anthracite-950;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-bronze-500;
+  }
+}
+
+@utility container-site {
+  @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+}
