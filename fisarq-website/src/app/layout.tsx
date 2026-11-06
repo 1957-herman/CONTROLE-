@@ -47,6 +47,7 @@ const jsonLd = {
   name: siteConfig.legalName,
   alternateName: siteConfig.name,
   url: siteConfig.url,
+  foundingDate: String(siteConfig.foundingYear),
   email: siteConfig.contact.email,
   telephone: siteConfig.contact.phone,
   description: siteConfig.description,

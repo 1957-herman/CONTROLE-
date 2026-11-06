@@ -4,6 +4,7 @@ export const siteConfig = {
   legalName: "FISARQ — Arquitetura, Engenharia e Gestão de Projetos, Lda.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.fisarq.ao",
   locale: "pt_AO",
+  foundingYear: 2014,
   title: "FISARQ | Arquitetura, Engenharia, Design e Gestão de Projetos",
   description:
     "Soluções integradas de arquitetura, engenharia de especialidades, design de interiores e fiscalização de obras. Rigor técnico, sustentabilidade e inovação do conceito à entrega.",
